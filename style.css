@@ -1,0 +1,318 @@
+/* style.css - Smart Dictionary - Clean & Human Friendly */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+}
+
+.dictionary-container {
+    max-width: 900px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 2rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.smart-header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.smart-header:hover {
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+}
+
+.smart-header h1 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    letter-spacing: 1px;
+}
+
+.smart-header p {
+    color: #e0e7ff;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.search-section {
+    padding: 1.5rem 2rem 0.8rem 2rem;
+    background: white;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+#wordInput {
+    flex: 3;
+    padding: 0.85rem 1.2rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    outline: none;
+    transition: 0.2s;
+}
+
+#wordInput:focus {
+    border-color: #667eea;
+}
+
+#searchBtn {
+    background: #2a5298;
+    border: none;
+    padding: 0.85rem 1.8rem;
+    border-radius: 50px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#searchBtn:hover {
+    background: #1e3c72;
+    transform: scale(0.97);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: flex-end;
+}
+
+.save-btn, .clear-btn {
+    padding: 0.6rem 1.5rem;
+    border-radius: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.save-btn {
+    background: #10b981;
+    color: white;
+}
+
+.save-btn:hover {
+    background: #059669;
+    transform: scale(0.96);
+}
+
+.clear-btn {
+    background: #ef4444;
+    color: white;
+}
+
+.clear-btn:hover {
+    background: #dc2626;
+    transform: scale(0.96);
+}
+
+.result-area {
+    padding: 0 2rem 1.5rem 2rem;
+    background: white;
+}
+
+.word-card {
+    background: #f8f9ff;
+    border-radius: 1.5rem;
+    padding: 1.2rem;
+    border: 1px solid #e0e7ff;
+}
+
+.word-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.word-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1e3c72;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.pronounce-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #eef2ff;
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+}
+
+.pronunciation {
+    font-family: monospace;
+    font-size: 0.85rem;
+    background: #e2e8f0;
+    padding: 0.2rem 0.7rem;
+    border-radius: 30px;
+}
+
+.audio-btn {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 30px;
+    background: #e2e8f0;
+}
+
+.audio-btn:hover {
+    background: #cbd5e1;
+    transform: scale(1.02);
+}
+
+.part-of-speech {
+    font-weight: bold;
+    background: #eef2ff;
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    border-radius: 30px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.definition-text {
+    margin: 0.7rem 0 0.3rem 1rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #333;
+}
+
+.example-text {
+    margin-left: 1rem;
+    color: #666;
+    font-style: italic;
+    font-size: 0.85rem;
+    border-left: 3px solid #aaa;
+    padding-left: 1rem;
+}
+
+.synonyms-section {
+    margin-top: 1rem;
+    background: #f1f5f9;
+    border-radius: 1rem;
+    padding: 0.7rem;
+}
+
+.synonyms-title {
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.synonyms-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.synonym-badge {
+    background: #e2e8f0;
+    padding: 0.2rem 0.8rem;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.synonym-badge:hover {
+    background: #cbd5e1;
+    transform: scale(0.96);
+}
+
+.error-message {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.loading {
+    text-align: center;
+    padding: 2rem;
+    color: #2a5298;
+    font-weight: bold;
+}
+
+.footer-note {
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 1rem;
+    background: #f1f5f9;
+    color: #555;
+    border-top: 1px solid #e2e8f0;
+}
+
+.toast-msg {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 14px;
+    z-index: 1000;
+    animation: fadeOut 2s ease forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+}
+
+.saved-word-item {
+    background: #f1f5f9;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.saved-word-item:hover {
+    background: #e2e8f0;
+    transform: scale(0.98);
+}
+
+@media (max-width: 550px) {
+    .word-title { font-size: 1.4rem; }
+    .smart-header h1 { font-size: 1.6rem; }
+    .save-btn, .clear-btn { padding: 0.5rem 1rem; font-size: 0.8rem; }
+}

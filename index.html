@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Dictionary | Wordly Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dictionary-container">
+    <div class="smart-header">
+        <h1> SMART WORDLY DICTIONARY</h1>
+        <p>definitions · pronunciation · synonyms · save words</p>
+    </div>
+
+    <div class="search-section">
+        <div class="input-group">
+            <input type="text" id="wordInput" placeholder="Type a word... e.g., harmony, joy, explore" autocomplete="off">
+            <button id="searchBtn"> Search</button>
+        </div>
+        <div class="action-buttons">
+            <button id="saveBtn" class="save-btn"> Save Word</button>
+            <button id="clearBtn" class="clear-btn"> Clear</button>
+        </div>
+    </div>
+
+    <div id="resultContainer" class="result-area">
+        <div class="word-card">
+            
+            <h3>Welcome to Smart Dictionary!</h3>
+            <p>Double-click the header to see your saved words</p>
+        </div>
+    </div>
+    <div class="footer-note">
+         Click synonyms to explore |  Save your favorite words
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
